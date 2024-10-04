@@ -1,0 +1,134 @@
+#intro{            
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
+    background-image: url(../../images/Background_Intro.png);
+    /* background-repeat: no-repeat; */
+    background-size: auto;
+}
+
+#info{ 
+    justify-content: center;
+    align-items: center;
+    width: 1040px;
+    margin-inline: 163px;
+    margin-block: 120px 183px;
+    /* Header contem a parte do avatar e dos textos */
+    header{ 
+        display:flex;
+        flex-direction: column;
+        place-content: center;
+        place-items: center;
+        width: 680px;
+        gap:56px;
+        margin-inline: 180px;
+        margin-bottom: 120px;
+
+        .avatar{        
+            position: relative;
+            width: 112px;
+            height: 112px;
+
+            margin-inline:284px;
+
+            .border{
+                margin: 8px;
+                width: 96px;
+                height: 96px;            
+                border-radius: 999px;
+                border: 2px solid var(--red);                      
+            }
+        
+            img:not(.code){
+                width: 87.27px;
+                height: 87.27px;
+                left: 12.36px;
+                top: 12.36px;
+                border-radius: 9999px;
+                margin: 4.36px;
+
+                position: absolute;
+                left: calc(50% - 96px/2);
+                top: calc(50% - 96px/2);
+            }
+
+            .code{
+                width: 32px;
+                height: 32px;
+                left: 77px;
+                top: 77px;
+
+                position: absolute;
+            }
+        }    
+    }
+
+    .text{        
+        text-align: center;
+        h2{
+            margin-top:56px;
+        }
+        .title-lg{
+            margin-top: 8px;
+        }
+        p{
+            margin-top:20px;
+        }
+    }
+
+}
+
+.tags{
+    margin-top: 80px;
+    margin-inline: 143px;
+    display:flex;
+    flex-direction: row;
+    justify-content: center;
+    /* flex-wrap: wrap; */
+    gap:16px;
+    
+    .tag{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        padding: 8px 16px;
+        background-color:var(--gray-300);
+        border-radius: 999px;
+        img{
+            margin: 8px 8px 8px 16px;            
+        }
+        p{
+            margin-block: 9px;
+            margin-inline: 8px 16px;
+        }
+        
+        svg{
+            &.HTML{
+                fill:var(--red);
+            }
+            &.CSS{
+                fill:var(--blue);
+            }
+            &.JS{
+                fill:var(--yellow);
+            }
+            &.NODE{
+                fill:var(--green);
+            }
+            &.REACT{
+                fill:var(--blue);
+            }
+        }       
+    }
+}
+
+.setaParaBaixo{
+    display: flex;
+    justify-content: center;
+    margin-block: 94px 57px;
+    svg{
+        fill:var(--gray-400);
+    }
+}

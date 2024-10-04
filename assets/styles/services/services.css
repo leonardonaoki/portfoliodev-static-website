@@ -1,0 +1,21 @@
+#services{
+    background-color: var(--gray-100);
+    padding-block: 88px 120px;
+    padding-inline: 120px;
+
+    .grid{
+        margin-inline: 239px;                
+    }
+
+    svg{
+        &.DEVICES{
+            fill:var(--purple);
+        }
+        &.HARDDRIVES{
+            fill:var(--yellow);
+        }
+        &.DEVOPS{
+            fill:var(--green);
+        }        
+    }
+}

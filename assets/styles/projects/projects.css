@@ -1,0 +1,39 @@
+#projects{
+    background-color: var(--gray-200);
+    padding-block: 72px 144px;
+    padding-inline: 120px;    
+
+    .grid{
+        margin-inline: 163px;
+        margin-bottom: 144px;
+    }
+
+    .projectCard{
+        box-sizing: border-box;
+        object-fit: cover;
+        background-color: var(--gray-300);
+        border-radius: 12px;
+        padding-block: 20px;
+        padding-inline: 12px;
+        
+        img{                
+            border-radius: 8px;
+            object-fit: cover;
+            box-sizing: border-box;
+            width: 100%;
+            margin-bottom:20px;
+        }
+        .text{
+            margin-bottom:17px;
+            margin-inline:12px;
+
+            h3{
+                margin:4px 4px 8px 4px;
+            }
+            p{
+                margin-inline: 4px;
+                margin-bottom: 4px
+            }
+        }           
+    }
+}
